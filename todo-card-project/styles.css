@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* CARD */
+.todo-card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* TITLE */
+.todo-title {
+  font-size: 1.4rem;
+}
+
+/* DESCRIPTION */
+.todo-description {
+  color: #cbd5f5;
+}
+
+/* BADGES */
+.badge {
+  padding: 4px 10px;
+  border-radius: 6px;
+  width: fit-content;
+  font-size: 0.85rem;
+}
+
+.priority.high {
+  background: crimson;
+}
+
+.status {
+  background: #334155;
+}
+
+/* DATE */
+.due-date {
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+/* TIME */
+.time-remaining {
+  font-weight: bold;
+}
+
+/* CHECKBOX */
+.checkbox-container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* TAGS */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+}
+
+.tags li {
+  background: #334155;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+/* BUTTONS */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 2px solid yellow;
+}
+
+button:first-child {
+  background: #22c55e;
+}
+
+button:last-child {
+  background: #ef4444;
+}
+
+/* COMPLETED STYLE */
+.completed .todo-title {
+  text-decoration: line-through;
+  opacity: 0.6;
+}

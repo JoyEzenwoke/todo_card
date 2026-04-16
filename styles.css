@@ -1,13 +1,7 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial;
   background: #0f172a;
-  color: #fff;
+  color: white;
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -18,7 +12,6 @@ body {
   max-width: 500px;
 }
 
-/* CARD */
 .todo-card {
   background: #1e293b;
   padding: 20px;
@@ -28,92 +21,57 @@ body {
   gap: 12px;
 }
 
-/* TITLE */
-.todo-title {
-  font-size: 1.4rem;
+.priority-indicator {
+  height: 5px;
+  border-radius: 5px;
 }
 
-/* DESCRIPTION */
-.todo-description {
-  color: #cbd5f5;
+.high { background: red; }
+.medium { background: orange; }
+.low { background: green; }
+
+.collapsible {
+  max-height: 50px;
+  overflow: hidden;
 }
 
-/* BADGES */
+.collapsible.expanded {
+  max-height: 500px;
+}
+
 .badge {
-  padding: 4px 10px;
-  border-radius: 6px;
-  width: fit-content;
-  font-size: 0.85rem;
-}
-
-.priority.high {
-  background: crimson;
-}
-
-.status {
   background: #334155;
+  padding: 4px 8px;
 }
 
-/* DATE */
-.due-date {
-  font-size: 0.9rem;
-  color: #94a3b8;
+.overdue {
+  color: red;
 }
 
-/* TIME */
-.time-remaining {
-  font-weight: bold;
+.hidden {
+  display: none;
 }
 
-/* CHECKBOX */
-.checkbox-container {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-
-/* TAGS */
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  list-style: none;
-}
-
-.tags li {
-  background: #334155;
-  padding: 5px 10px;
-  border-radius: 20px;
-  font-size: 0.8rem;
-}
-
-/* BUTTONS */
 .actions {
   display: flex;
   gap: 10px;
-}
-
-button {
-  padding: 8px 12px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
 }
 
 button:focus {
   outline: 2px solid yellow;
 }
 
-button:first-child {
-  background: #22c55e;
-}
-
-button:last-child {
-  background: #ef4444;
-}
-
-/* COMPLETED STYLE */
 .completed .todo-title {
   text-decoration: line-through;
-  opacity: 0.6;
+  opacity: 0.5;
+}
+
+.in-progress {
+  border-left: 4px solid blue;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }

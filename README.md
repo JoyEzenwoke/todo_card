@@ -125,16 +125,6 @@ The goal of this stage was to introduce:
 
 ---
 
-## ⚠️ Known Limitations
-
-* Only supports **one todo card** (not a full app)
-* No persistent storage (data resets on refresh)
-* No animations for transitions (kept minimal for simplicity)
-* Expand/collapse is based on fixed height, not dynamic text measurement
-* Time updates every 60 seconds (not real-time seconds)
-
----
-
 ## ♿ Accessibility Notes
 
 This project includes several accessibility improvements:
@@ -203,11 +193,6 @@ Tab order:
 
 ## 📦 Deployment
 
-* Live URL: *(Add your deployed link here)*
-* GitHub Repo: *(Add your repo link here)*
+* Live URL: *(https://todo-card-git-main-joy-ezenwoke-s-projects.vercel.app/)*
+* GitHub Repo: *(https://github.com/JoyEzenwoke/todo_card)*
 
----
-
-## 🙌 Final Note
-
-This project focuses on **building a testable, accessible, and interactive UI component** without relying on frameworks, emphasizing strong fundamentals in frontend development.
